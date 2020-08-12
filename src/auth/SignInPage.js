@@ -2,9 +2,5 @@ import React from 'react';
 import { CenteredContentBox, Button } from '../ui';
 
 export const SignInPage = () => {
-  return (
-    <CenteredContentBox>
-      <Button>My Sign In Button</Button>
-    </CenteredContentBox>
-  );
+  return <CenteredContentBox>Sign In</CenteredContentBox>;
 };
