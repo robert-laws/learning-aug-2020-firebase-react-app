@@ -18,6 +18,19 @@ const customStyles = {
   },
 };
 
+const XCloseButton = styled.button`
+  float: right;
+  outline: none;
+  border: none;
+  background: #fff;
+  font-size: 28px;
+  cursor: pointer;
+
+  &:hover {
+    color: #777;
+  }
+`;
+
 const ContentBox = styled.div`
   background-color: #fff;
   padding: 16px;
@@ -45,6 +58,14 @@ export const Modal = ({
     style={customStyles}
     contentLabel='Example Modal'
   >
+    <XCloseButton
+      onClick={() => {
+        document.body.style.overflow = 'unset';
+        onRequestClose();
+      }}
+    >
+      <span aria-hidden='true'>&times;</span>
+    </XCloseButton>
     <ContentBox>{children}</ContentBox>
   </ModalBase>
 );
