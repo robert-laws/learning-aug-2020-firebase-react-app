@@ -1,5 +1,5 @@
 import React from 'react';
-// import './App.scss';
+import './App.scss';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { SignInPage, CreateAccountPage } from './auth';
 
@@ -7,7 +7,7 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route path='/'>
+        <Route exact path='/'>
           <SignInPage />
         </Route>
         <Route path='/create-account'>

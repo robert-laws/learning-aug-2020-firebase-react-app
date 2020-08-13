@@ -1,6 +1,11 @@
 import React from 'react';
-import { CenteredContentBox, Button } from '../ui';
+import { CenteredContentBox } from '../ui';
+import { SignInForm } from './SignInForm';
 
 export const SignInPage = () => {
-  return <CenteredContentBox>Sign In</CenteredContentBox>;
+  return (
+    <CenteredContentBox>
+      <SignInForm />
+    </CenteredContentBox>
+  );
 };

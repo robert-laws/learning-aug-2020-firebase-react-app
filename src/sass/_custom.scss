@@ -1,5 +1,17 @@
-// Override default variables before the import
-$body-bg: #eee;
+// // Override default variables before the import
+// $body-bg: #eee;
 
-// Import Bootstrap and its default variables
-@import '~bootstrap/scss/bootstrap.scss';
+// // Import Bootstrap and its default variables
+// @import '~bootstrap/scss/bootstrap.scss';
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: 'Open Sans', sans-serif;
+}
