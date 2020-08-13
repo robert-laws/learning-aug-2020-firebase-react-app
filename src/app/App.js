@@ -1,9 +1,9 @@
 import React from 'react';
 import './App.scss';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import { SignInPage, CreateAccountPage } from './auth';
+import { SignInPage, CreateAccountPage } from '../auth';
 
-function App() {
+export function App() {
   return (
     <Router>
       <Switch>
@@ -17,5 +17,3 @@ function App() {
     </Router>
   );
 }
-
-export default App;
