@@ -37,11 +37,11 @@ export const SignInForm = () => {
 
   const history = useHistory();
 
-  const onSignInClicked = () => {
+  const onSignInClicked = async () => {
     console.log('CLICKED');
 
     try {
-      signIn(emailValue, passwordValue);
+      await signIn(emailValue, passwordValue);
       history.push('/');
     } catch (error) {
       setErrorMessage(error.message);

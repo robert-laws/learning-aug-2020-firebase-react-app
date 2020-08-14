@@ -14,7 +14,7 @@ const ButtonBase = styled.button`
   transition: all 0.15s ease-in-out;
 
   &:hover {
-    background-color: #7ea120;
+    background-color: ${(props) => (props.alert ? '#ad0d25' : '#7ea120')};
   }
 
   :disabled {
