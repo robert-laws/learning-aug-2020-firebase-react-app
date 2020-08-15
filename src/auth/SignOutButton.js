@@ -17,7 +17,7 @@ export const SignOutButton = () => {
   };
 
   return (
-    <StyledButton alert onClick={onClickSignOut} style={{ float: 'right' }}>
+    <StyledButton alert onClick={onClickSignOut}>
       Sign Out
     </StyledButton>
   );

@@ -22,8 +22,15 @@ export function App() {
         <Route path='/create-account'>
           <CreateAccountPage />
         </Route>
-        <ProtectedRoute isAuthed={!!user} isLoading={isLoading} path='/'>
+        <ProtectedRoute isAuthed={!!user} isLoading={isLoading} path='/' exact>
           <ReservationsListPage />
+        </ProtectedRoute>
+        <ProtectedRoute
+          isAuthed={!!user}
+          isLoading={isLoading}
+          path='/edit-profile'
+        >
+          <EditProfilePage />
         </ProtectedRoute>
       </Switch>
     </Router>

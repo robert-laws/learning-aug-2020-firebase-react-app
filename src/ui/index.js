@@ -5,3 +5,6 @@ export { ErrorMessage } from './ErrorMessage';
 export { Heading } from './Heading';
 export { HeadingSmall } from './HeadingSmall';
 export { TextInput } from './TextInput';
+export { TextArea } from './TextArea';
+export { UploadSingleFileButton } from './UploadSingleFileButton';
+export { Link } from './Link';
